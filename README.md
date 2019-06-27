@@ -28,3 +28,7 @@ You also have to have 2 timers: one for real time, and one for game time.
 By the end it should look like this in the layout editor
 
 ![alt text](https://dani30868.s-ul.eu/YzQRQigq)
+
+## I have a question...
+Contact me on Discord: Szalasz#7856
+Any ideas/questions are appreciated!
