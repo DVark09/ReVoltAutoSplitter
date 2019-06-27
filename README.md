@@ -21,5 +21,7 @@ Probably. Before we go on to use it we should agree on this though.
 It can be downloaded here, but I don't know yet if I would put it out globally to LiveSplit's autosplitter database before 100% is  done.
 ## How do I use it?
 You first download the .asl file, go to Livesplit and right click on the splits, go to edit layout. Add a new object called Scriptable auto splitter and make the script path point to the downloaded file. From there, you can select in advanced options which run are you doing. Select the desired option (for NG+ select both All Cups and NG+) and you're good to go.
-Splits: You have to have every level as a split, and if you want it to be fancy you have to use subsplits. I included my own layout to see how it works. ![alt text](https://dani30868.s-ul.eu/qOkm2jAD) You also have to have 2 timers: one for real time, and one for game time.
+Splits: You have to have every level as a split, and if you want it to be fancy you have to use subsplits. I included my own layout in the files to see how it works. ![alt text](https://dani30868.s-ul.eu/qOkm2jAD) 
+You also have to have 2 timers: one for real time, and one for game time.
 ![alt text](https://dani30868.s-ul.eu/YzQRQigq)
+By the end it should look like this in the layout editor
