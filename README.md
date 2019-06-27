@@ -24,4 +24,5 @@ You first download the .asl file, go to Livesplit and right click on the splits,
 Splits: You have to have every level as a split, and if you want it to be fancy you have to use subsplits. I included my own layout in the files to see how it works. ![alt text](https://dani30868.s-ul.eu/qOkm2jAD) 
 You also have to have 2 timers: one for real time, and one for game time.
 ![alt text](https://dani30868.s-ul.eu/YzQRQigq)
+
 By the end it should look like this in the layout editor
