@@ -18,6 +18,6 @@ They would be retimed in the case of load removal, but individual splits for the
 ## So are we going to use game time from now on to track the runs?
 Probably. Before we go on to use it we should agree on this though.
 ## When is it going to be out?
-It can be downloaded here, but I don't know yet if I would put it out globally to LiveSplit's autosplitter database before 100% is also done.
+It can be downloaded here, but I don't know yet if I would put it out globally to LiveSplit's autosplitter database before 100% is  done.
 ## How do I use it?
 You first download the .asl file, go to livesplit and right click on the splits, go to edit layout. Add a new object called Scriptable auto splitter and make the script path point to the downloaded file. From there, you can select in advanced options which run are you doing. Select the desired option (for NG+ select both All Cups and NG+) and you're good to go.
