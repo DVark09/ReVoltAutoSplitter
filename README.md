@@ -31,4 +31,5 @@ By the end it should look like this in the layout editor
 
 ## I have a question...
 Contact me on Discord: Szalasz#7856
+
 Any ideas/questions are appreciated!
