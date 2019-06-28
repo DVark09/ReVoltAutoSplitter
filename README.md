@@ -11,6 +11,7 @@ It works in All Cups (both NG and NG+) and Stunt Arena. 100% is in the works but
 ## What will this help?
 It will help to standardize splits and to have a competition that is accurate and not defected by any matter.
 ## Would any rule be changed?
+The load remover doesn't work with the launch option -sload, so that would be removed.
 The rule which allows the user to skip the ceremony by force closing is really considered to be taken out because of the same reasons this autosplitter exists.
 Also turning off instances might be removed, but the autosplitter has no relevation in this decision. It saves some time, but it breaks the game's looks.
 ## What would happen to the older runs?
