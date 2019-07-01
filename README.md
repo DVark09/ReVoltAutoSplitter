@@ -28,7 +28,8 @@ All Cups: You have to have every level as a split, and if you want it to be fanc
 ![alt text](https://dani30868.s-ul.eu/qOkm2jAD) 
 
 
-Stunt Arena: Create just a single split. That's all
+Stunt Arena: Create just a single split. That's all.
+
 100%: You have to create individual split for everything (practice stars, individual races, time attacks and championships) in the order of your liking. I suggest using subsplits to make it look fancy.
 
 You also have to have 2 timers: one for real time, and one for game time.
