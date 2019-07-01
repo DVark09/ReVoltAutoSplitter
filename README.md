@@ -7,7 +7,7 @@ It accesses memory addresses which contain useful information, such as the lap c
 All Cups:  It starts the timer and it splits at the end of every race. 
 Stunt Arena: It starts the timer when the map has loaded in and stops when you get the final star
 ## In which categories does this work?
-It works in All Cups (both NG and NG+) and Stunt Arena. 100% is in the works but we lack information and we also have to agree whether how we should track it due to different strategies.
+It works in every currently existing category.
 ## What will this help?
 It will help to standardize splits and to have a competition that is accurate and not defected by any matter.
 ## Would any rule be changed?
@@ -19,15 +19,20 @@ They would be retimed in the case of load removal, but individual splits for the
 ## So are we going to use game time from now on to track the runs?
 Probably. Before we go on to use it we should agree on this though.
 ## When is it going to be out?
-It can be downloaded here, but I don't know yet if I would put it out globally to LiveSplit's autosplitter database before 100% is  done. Also we haven't agreed on whether we allow runs from now on, so you'll have to wait a bit for it.
+I think it's done. 1.0 is here, Uploaded to LiveSplit and available through LiveSplit itself. Also downloadable here, but it would be just the same as the one on LiveSplit
 ## How do I use it?
-You first download the files, go to Livesplit and right click on the splits, go to edit layout. Add a new object called Scriptable auto splitter and make the script path point to the downloaded .asl file. From there, you can select in advanced options which run you are doing. Select the desired option (for NG+ select both All Cups and NG+) and you're good to go.
+You first download the files, go to Livesplit and right click on the splits, go to edit layout. Add a new object called Scriptable auto splitter and make the script path point to the downloaded .asl file. From there, you can select in advanced options which run you are doing. Select the desired option (All Cups for NG+ too) and you're good to go.
 
-Splits: You have to have every level as a split, and if you want it to be fancy you have to use subsplits. I included my own layout in the files to see how it works. For Stunt arena, you only have to have one split. The image shows example with subsplits used. For All Cups NG+, use the same as you would use for All Cups, but make it in the order as you wish.
+Splits:
+All Cups: You have to have every level as a split, and if you want it to be fancy you have to use subsplits. I included my own layout in the files to see how it works. For Stunt arena, you only have to have one split. The image shows example with subsplits used. For All Cups NG+, use the same as you would use for All Cups, but make it in the order as you wish.
 ![alt text](https://dani30868.s-ul.eu/qOkm2jAD) 
+
+
+Stunt Arena: Create just a single split. That's all
+100%: You have to create individual split for everything (practice stars, individual races, time attacks and championships) in the order of your liking. I suggest using subsplits to make it look fancy.
+
 You also have to have 2 timers: one for real time, and one for game time.
 By the end it should look like this in the layout editor
-
 ![alt text](https://dani30868.s-ul.eu/YzQRQigq)
 
 ## I have a question...
