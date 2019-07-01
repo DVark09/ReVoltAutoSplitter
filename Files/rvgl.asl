@@ -32,7 +32,6 @@ init
         new MemoryWatcher<byte>(  (IntPtr)Address +  0x674 ) { Name = "SM1" },
 		new MemoryWatcher<byte>(  (IntPtr)Address +  0x6E8 ) { Name = "GT2" },
         new MemoryWatcher<byte>(  (IntPtr)Address +  0x75C ) { Name = "TT2" },
-		
 	};
 }
 start
