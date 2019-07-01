@@ -24,6 +24,7 @@ I think it's done. 1.0 is here, Uploaded to LiveSplit and available through Live
 You first download the files, go to Livesplit and right click on the splits, go to edit layout. Add a new object called Scriptable auto splitter and make the script path point to the downloaded .asl file. From there, you can select in advanced options which run you are doing. Select the desired option (All Cups for NG+ too) and you're good to go.
 
 Splits:
+
 All Cups: You have to have every level as a split, and if you want it to be fancy you have to use subsplits. I included my own layout in the files to see how it works. For Stunt arena, you only have to have one split. The image shows example with subsplits used. For All Cups NG+, use the same as you would use for All Cups, but make it in the order as you wish.
 ![alt text](https://dani30868.s-ul.eu/qOkm2jAD) 
 
