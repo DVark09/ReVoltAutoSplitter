@@ -3,6 +3,8 @@ state ("rvgl")
 	int RaceTime : 0x02586B0, 0x0; // Your current lap time
 	int Loading : 0xACC51C; //Bool, shows if the game is loading
 	int stuntStars : 0x0258440, 0x10; //Counts the stars taken from stunt arena
+	int championshipLapCounter: 0x0256AA0, 0x18; //Indicated the max laps on championships
+	int lapCounter: 0x0258140, 0xF18; //Indicates the number of laps you completed. Starts from 0
 }
 startup
 {
@@ -56,8 +58,13 @@ split
         if(vars.maps[map].Current>vars.maps[map].Old) //Checks if the progress table has changed
         {
             return true;
+			break;
         }
         }
+		if(current.lapCounter==current.championshipLapCounter && current.lapCounter!=old.lapCounter)
+		{
+			return true;
+		}
 	}
 	if(settings["StuntArena"])
 	{
