@@ -14,6 +14,7 @@ startup
 }
 init
 {
+	vars.split=0;
 	//Setting up the check for All Cups and 100%:
 	vars.mapNames = new List<string> { "Nhood1", "SM2", "MS2", "BG", "Roof", "TW1", "GT1", "TW2", "Nhood2", "TT1", "MS1", "SM1", "GT2", "TT2" };
 	//Setting up the values for checking All Cups and 100%:
@@ -39,10 +40,11 @@ init
 }
 start
 {
-		if(current.Loading==0 && old.Loading==1) //Checks if any type of race loaded in
-		{
-			return true;
-		}
+	if(current.Loading==0 && old.Loading==1) //Checks if any type of race loaded in
+	{
+		return true;
+		vars.split=1;
+	}
 }
 update
 {
@@ -57,15 +59,29 @@ split
         {    
         if(vars.maps[map].Current>vars.maps[map].Old) //Checks if the progress table has changed
         {
+			vars.split+=1;
             return true;
-			break;
         }
         }
 		if(current.lapCounter==current.championshipLapCounter && current.lapCounter!=old.lapCounter)
 		{
-			return true;
+			if(settings["100%"])
+			{
+				if(vars.split!=8 && vars.split!=15 && vars.split!=19 && vars.split!=27)
+				{
+					return true;
+				}
+			}
+			if(settings["AllCups"])
+			{
+				if(vars.split!=4 && vars.split!=8 && vars.split!=12 && vars.split!=17)
+				{
+					return true;
+				}
+			}
 		}
-	}
+		}
+	
 	if(settings["StuntArena"])
 	{
 		if(current.stuntStars==20)
