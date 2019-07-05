@@ -35,9 +35,10 @@ Stunt Arena: Create just a single split. That's all.
 
 You also have to have 2 timers: one for real time, and one for game time.
 By the end it should look like this in the layout editor
+No need for scriptable auto splitter in the layout anymore!
 
 ![alt text](https://dani30868.s-ul.eu/YzQRQigq)
-#No need for scriptable auto splitter in the layout anymore!
+
 ## I have a question...
 Contact me on Discord: DVark09#7856
 
