@@ -15,10 +15,10 @@ startup
 }
 init
 {
-	vars.split=1;
-	//Setting up the check for All Cups and 100%:
+	vars.split=1; //Important for knowing where are you currently in the run to avoid double splitting at the end of cups on 100%.
+	//Setting up the check criteria for 100% (comparing each row in the progress table by reffering it with its name):
 	vars.mapNames = new List<string> { "Nhood1", "SM2", "MS2", "BG", "Roof", "TW1", "GT1", "TW2", "Nhood2", "TT1", "MS1", "SM1", "GT2", "TT2" };
-	//Setting up the values for checking All Cups and 100%:
+	//Setting up the values for checking 100%:
 	long Address= memory.ReadValue<int>( IntPtr.Add( modules.First().BaseAddress, (int) 0x0256B10 ) );
 	vars.maps = new MemoryWatcherList
     {
@@ -49,34 +49,17 @@ start
 }
 update
 {
-	//Updates the values of the progress table rows
-	vars.maps.UpdateAll(game);
+	vars.maps.UpdateAll(game); //Updates the values of the progress table rows
 }
 split
 {
-	if(settings["100%"] || settings["AllCups"])
+	if(settings["100%"])
 	{
-        foreach(string map in vars.mapNames)
-        {    
-        	if(vars.maps[map].Current>vars.maps[map].Old) //Checks if the progress table has changed
-        	{
-			vars.split+=1;
-            return true;
-        	}
-        }
-		if(current.lapCounter==current.championshipLapCounter && current.lapCounter!=old.lapCounter)
+		if(vars.split!=8 && vars.split!=15 && vars.split!=19 && vars.split!=27) //Checks if you're not at the and of any cup(avoids double splitting)
 		{
-			if(settings["100%"])
-			{
-				if(vars.split!=8 && vars.split!=15 && vars.split!=19 && vars.split!=27)
-				{
-					vars.split+=1;
-					return true;
-				}
-			}
-			if(settings["AllCups"])
-			{
-				if(vars.split!=4 && vars.split!=8 && vars.split!=12 && vars.split!=17)
+			foreach(string map in vars.mapNames)
+			{    
+				if(vars.maps[map].Current>vars.maps[map].Old) //Checks if the progress table has changed
 				{
 					vars.split+=1;
 					return true;
@@ -84,11 +67,25 @@ split
 			}
 		}
 	}
+	if(settings["100%"] || settings["AllCups"])
+	{
+		if(current.lapCounter==current.championshipLapCounter && current.lapCounter!=old.lapCounter) //Race has been finished, the right condition is to prevent it from triggering multiple times
+		{
+			if(settings["100%"])
+			{	
+				vars.split+=1;
+				return true;
+			}
+			if(settings["AllCups"])
+			{
+				return true;
+			}
+		}
+	}
 	if(settings["StuntArena"])
 	{
 		if(current.stuntStars==20)
 		{
-			print("stunt");
 			return true;
 		}
 	}
@@ -110,11 +107,10 @@ reset
 	{
         foreach(string map in vars.mapNames)
         {    
-        if(vars.maps[map].Current<vars.maps[map].Old) //Resets if the progress table gets reset
-        {
-            return true;
-			vars.split=1;
-        }
+			if(vars.maps[map].Current<vars.maps[map].Old) //Resets if the progress table gets reset
+			{
+				return true;
+			}
         }
 	}
 	if(settings["StuntArena"])
