@@ -14,7 +14,7 @@
     </Variables>
   </Metadata>
   <Offset>00:00:00</Offset>
-  <AttemptCount>0</AttemptCount>
+  <AttemptCount>49</AttemptCount>
   <AttemptHistory>
     <Attempt id="1" started="06/19/2019 14:35:15" isStartedSynced="True" ended="06/19/2019 14:35:17" isEndedSynced="True" />
     <Attempt id="2" started="06/19/2019 14:35:18" isStartedSynced="True" ended="06/19/2019 14:35:20" isEndedSynced="True" />
@@ -46,6 +46,21 @@
     <Attempt id="24" started="06/23/2019 09:36:14" isStartedSynced="True" ended="06/23/2019 09:36:22" isEndedSynced="True" />
     <Attempt id="25" started="07/01/2019 16:16:52" isStartedSynced="True" ended="07/01/2019 16:16:55" isEndedSynced="True" />
     <Attempt id="26" started="07/01/2019 16:17:32" isStartedSynced="True" ended="07/01/2019 16:17:58" isEndedSynced="True" />
+    <Attempt id="27" started="07/02/2019 15:46:25" isStartedSynced="True" ended="07/02/2019 15:46:41" isEndedSynced="True" />
+    <Attempt id="28" started="07/02/2019 15:54:05" isStartedSynced="True" ended="07/02/2019 15:54:07" isEndedSynced="True" />
+    <Attempt id="29" started="07/02/2019 15:54:55" isStartedSynced="True" ended="07/02/2019 15:54:57" isEndedSynced="True" />
+    <Attempt id="30" started="07/05/2019 15:08:45" isStartedSynced="True" ended="07/05/2019 15:08:47" isEndedSynced="True" />
+    <Attempt id="31" started="07/05/2019 15:13:19" isStartedSynced="True" ended="07/05/2019 15:15:12" isEndedSynced="True" />
+    <Attempt id="32" started="07/05/2019 15:15:13" isStartedSynced="True" ended="07/05/2019 15:15:14" isEndedSynced="True" />
+    <Attempt id="33" started="07/05/2019 15:16:08" isStartedSynced="True" ended="07/05/2019 15:16:46" isEndedSynced="True" />
+    <Attempt id="34" started="07/05/2019 15:22:19" isStartedSynced="True" ended="07/05/2019 15:22:46" isEndedSynced="True" />
+    <Attempt id="35" started="07/05/2019 15:22:50" isStartedSynced="True" ended="07/05/2019 15:22:54" isEndedSynced="True" />
+    <Attempt id="36" started="07/05/2019 15:22:55" isStartedSynced="True" ended="07/05/2019 15:22:55" isEndedSynced="True" />
+    <Attempt id="37" started="07/05/2019 17:41:14" isStartedSynced="True" ended="07/05/2019 17:41:28" isEndedSynced="True" />
+    <Attempt id="38" started="07/05/2019 17:42:08" isStartedSynced="True" ended="07/05/2019 17:42:10" isEndedSynced="True" />
+    <Attempt id="39" started="07/05/2019 17:42:11" isStartedSynced="True" ended="07/05/2019 17:42:16" isEndedSynced="True" />
+    <Attempt id="40" started="07/05/2019 17:44:30" isStartedSynced="True" ended="07/05/2019 17:44:32" isEndedSynced="True" />
+    <Attempt id="41" started="07/05/2019 17:48:02" isStartedSynced="True" ended="07/05/2019 17:48:09" isEndedSynced="True" />
   </AttemptHistory>
   <Segments>
     <Segment>
@@ -55,7 +70,10 @@
         <SplitTime name="Personal Best" />
       </SplitTimes>
       <BestSegmentTime />
-      <SegmentHistory />
+      <SegmentHistory>
+        <Time id="6" />
+        <Time id="21" />
+      </SegmentHistory>
     </Segment>
     <Segment>
       <Name>-Supermarket 2</Name>
@@ -64,7 +82,10 @@
         <SplitTime name="Personal Best" />
       </SplitTimes>
       <BestSegmentTime />
-      <SegmentHistory />
+      <SegmentHistory>
+        <Time id="6" />
+        <Time id="21" />
+      </SegmentHistory>
     </Segment>
     <Segment>
       <Name>-Museum 2</Name>
@@ -73,16 +94,30 @@
         <SplitTime name="Personal Best" />
       </SplitTimes>
       <BestSegmentTime />
-      <SegmentHistory />
+      <SegmentHistory>
+        <Time id="6" />
+        <Time id="21" />
+      </SegmentHistory>
     </Segment>
     <Segment>
       <Name>{Bronze} Botanical Garden</Name>
       <Icon />
       <SplitTimes>
-        <SplitTime name="Personal Best" />
+        <SplitTime name="Personal Best">
+          <RealTime>00:09:55.1020000</RealTime>
+        </SplitTime>
       </SplitTimes>
-      <BestSegmentTime />
-      <SegmentHistory />
+      <BestSegmentTime>
+        <RealTime>00:09:55.1020000</RealTime>
+      </BestSegmentTime>
+      <SegmentHistory>
+        <Time id="6">
+          <RealTime>00:10:11.6740000</RealTime>
+        </Time>
+        <Time id="21">
+          <RealTime>00:09:55.1020000</RealTime>
+        </Time>
+      </SegmentHistory>
     </Segment>
     <Segment>
       <Name>-Toy World 1</Name>
@@ -91,7 +126,10 @@
         <SplitTime name="Personal Best" />
       </SplitTimes>
       <BestSegmentTime />
-      <SegmentHistory />
+      <SegmentHistory>
+        <Time id="6" />
+        <Time id="21" />
+      </SegmentHistory>
     </Segment>
     <Segment>
       <Name>-Toys in the Hood 1 M</Name>
@@ -100,7 +138,10 @@
         <SplitTime name="Personal Best" />
       </SplitTimes>
       <BestSegmentTime />
-      <SegmentHistory />
+      <SegmentHistory>
+        <Time id="6" />
+        <Time id="21" />
+      </SegmentHistory>
     </Segment>
     <Segment>
       <Name>-Ghost Town 1</Name>
@@ -109,16 +150,30 @@
         <SplitTime name="Personal Best" />
       </SplitTimes>
       <BestSegmentTime />
-      <SegmentHistory />
+      <SegmentHistory>
+        <Time id="6" />
+        <Time id="21" />
+      </SegmentHistory>
     </Segment>
     <Segment>
       <Name>{Silver} Toy World 2</Name>
       <Icon />
       <SplitTimes>
-        <SplitTime name="Personal Best" />
+        <SplitTime name="Personal Best">
+          <RealTime>00:21:59.0130000</RealTime>
+        </SplitTime>
       </SplitTimes>
-      <BestSegmentTime />
-      <SegmentHistory />
+      <BestSegmentTime>
+        <RealTime>00:12:03.9110000</RealTime>
+      </BestSegmentTime>
+      <SegmentHistory>
+        <Time id="6">
+          <RealTime>00:12:54.7780000</RealTime>
+        </Time>
+        <Time id="21">
+          <RealTime>00:12:03.9110000</RealTime>
+        </Time>
+      </SegmentHistory>
     </Segment>
     <Segment>
       <Name>-Toys in the Hood 2</Name>
@@ -127,7 +182,10 @@
         <SplitTime name="Personal Best" />
       </SplitTimes>
       <BestSegmentTime />
-      <SegmentHistory />
+      <SegmentHistory>
+        <Time id="6" />
+        <Time id="21" />
+      </SegmentHistory>
     </Segment>
     <Segment>
       <Name>-Toy World 1 M</Name>
@@ -136,7 +194,10 @@
         <SplitTime name="Personal Best" />
       </SplitTimes>
       <BestSegmentTime />
-      <SegmentHistory />
+      <SegmentHistory>
+        <Time id="6" />
+        <Time id="21" />
+      </SegmentHistory>
     </Segment>
     <Segment>
       <Name>-Toytanic 1</Name>
@@ -145,16 +206,30 @@
         <SplitTime name="Personal Best" />
       </SplitTimes>
       <BestSegmentTime />
-      <SegmentHistory />
+      <SegmentHistory>
+        <Time id="6" />
+        <Time id="21" />
+      </SegmentHistory>
     </Segment>
     <Segment>
       <Name>{Gold} Museum 1</Name>
       <Icon />
       <SplitTimes>
-        <SplitTime name="Personal Best" />
+        <SplitTime name="Personal Best">
+          <RealTime>00:41:41.0580000</RealTime>
+        </SplitTime>
       </SplitTimes>
-      <BestSegmentTime />
-      <SegmentHistory />
+      <BestSegmentTime>
+        <RealTime>00:19:42.0450000</RealTime>
+      </BestSegmentTime>
+      <SegmentHistory>
+        <Time id="6">
+          <RealTime>00:24:27.9080000</RealTime>
+        </Time>
+        <Time id="21">
+          <RealTime>00:19:42.0450000</RealTime>
+        </Time>
+      </SegmentHistory>
     </Segment>
     <Segment>
       <Name>-Supermarket 1</Name>
@@ -163,7 +238,10 @@
         <SplitTime name="Personal Best" />
       </SplitTimes>
       <BestSegmentTime />
-      <SegmentHistory />
+      <SegmentHistory>
+        <Time id="6" />
+        <Time id="21" />
+      </SegmentHistory>
     </Segment>
     <Segment>
       <Name>-Ghost Town 2</Name>
@@ -172,7 +250,10 @@
         <SplitTime name="Personal Best" />
       </SplitTimes>
       <BestSegmentTime />
-      <SegmentHistory />
+      <SegmentHistory>
+        <Time id="6" />
+        <Time id="21" />
+      </SegmentHistory>
     </Segment>
     <Segment>
       <Name>-Toy World 1 RM</Name>
@@ -181,7 +262,10 @@
         <SplitTime name="Personal Best" />
       </SplitTimes>
       <BestSegmentTime />
-      <SegmentHistory />
+      <SegmentHistory>
+        <Time id="6" />
+        <Time id="21" />
+      </SegmentHistory>
     </Segment>
     <Segment>
       <Name>-Museum 1 M</Name>
@@ -190,17 +274,42 @@
         <SplitTime name="Personal Best" />
       </SplitTimes>
       <BestSegmentTime />
-      <SegmentHistory />
+      <SegmentHistory>
+        <Time id="6" />
+        <Time id="21" />
+      </SegmentHistory>
     </Segment>
     <Segment>
       <Name>{Platinum} Toytanic 2</Name>
       <Icon />
       <SplitTimes>
-        <SplitTime name="Personal Best" />
+        <SplitTime name="Personal Best">
+          <RealTime>01:08:48.6420000</RealTime>
+        </SplitTime>
       </SplitTimes>
-      <BestSegmentTime />
-      <SegmentHistory />
+      <BestSegmentTime>
+        <RealTime>00:27:07.5840000</RealTime>
+      </BestSegmentTime>
+      <SegmentHistory>
+        <Time id="6">
+          <RealTime>00:27:12.0690000</RealTime>
+        </Time>
+        <Time id="21">
+          <RealTime>00:27:07.5840000</RealTime>
+        </Time>
+      </SegmentHistory>
     </Segment>
   </Segments>
-  <AutoSplitterSettings />
+  <AutoSplitterSettings>
+    <Version>1.5</Version>
+    <ScriptPath>D:\Speedrun\LiveSplit\Components\rvgl.asl</ScriptPath>
+    <Start>True</Start>
+    <Reset>True</Reset>
+    <Split>True</Split>
+    <CustomSettings>
+      <Setting id="AllCups" type="bool">True</Setting>
+      <Setting id="StuntArena" type="bool">False</Setting>
+      <Setting id="100%" type="bool">False</Setting>
+    </CustomSettings>
+  </AutoSplitterSettings>
 </Run>

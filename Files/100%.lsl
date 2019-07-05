@@ -58,7 +58,7 @@
         <DisplayGameIcon>True</DisplayGameIcon>
         <ShowRegion>False</ShowRegion>
         <ShowPlatform>False</ShowPlatform>
-        <ShowVariables>False</ShowVariables>
+        <ShowVariables>True</ShowVariables>
       </Settings>
     </Component>
     <Component>
@@ -213,7 +213,7 @@
         <CenteredText>True</CenteredText>
         <FilterRegion>False</FilterRegion>
         <FilterPlatform>False</FilterPlatform>
-        <FilterVariables>False</FilterVariables>
+        <FilterVariables>True</FilterVariables>
       </Settings>
     </Component>
     <Component>

@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Layout version="1.6.1">
   <Mode>Vertical</Mode>
-  <X>1951</X>
-  <Y>360</Y>
+  <X>1961</X>
+  <Y>363</Y>
   <VerticalWidth>352</VerticalWidth>
   <VerticalHeight>492</VerticalHeight>
   <HorizontalWidth>-1</HorizontalWidth>
@@ -58,7 +58,7 @@
         <DisplayGameIcon>True</DisplayGameIcon>
         <ShowRegion>False</ShowRegion>
         <ShowPlatform>False</ShowPlatform>
-        <ShowVariables>False</ShowVariables>
+        <ShowVariables>True</ShowVariables>
       </Settings>
     </Component>
     <Component>
@@ -213,7 +213,7 @@
         <CenteredText>True</CenteredText>
         <FilterRegion>False</FilterRegion>
         <FilterPlatform>False</FilterPlatform>
-        <FilterVariables>False</FilterVariables>
+        <FilterVariables>True</FilterVariables>
       </Settings>
     </Component>
     <Component>
@@ -264,21 +264,6 @@
         <BackgroundColor2>00FFFFFF</BackgroundColor2>
         <BackgroundGradient>Plain</BackgroundGradient>
         <Display2Rows>False</Display2Rows>
-      </Settings>
-    </Component>
-    <Component>
-      <Path>LiveSplit.ScriptableAutoSplit.dll</Path>
-      <Settings>
-        <Version>1.5</Version>
-        <ScriptPath>D:\Speedrun\SPLITTER\rvgl.asl</ScriptPath>
-        <Start>True</Start>
-        <Reset>True</Reset>
-        <Split>True</Split>
-        <CustomSettings>
-          <Setting id="AllCups" type="bool">True</Setting>
-          <Setting id="StuntArena" type="bool">False</Setting>
-          <Setting id="100%" type="bool">False</Setting>
-        </CustomSettings>
       </Settings>
     </Component>
   </Components>

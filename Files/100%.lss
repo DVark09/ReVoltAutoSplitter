@@ -13,7 +13,7 @@
     </Variables>
   </Metadata>
   <Offset>00:00:00</Offset>
-  <AttemptCount>0</AttemptCount>
+  <AttemptCount>1</AttemptCount>
   <AttemptHistory>
     <Attempt id="1" started="06/19/2019 14:35:15" isStartedSynced="True" ended="06/19/2019 14:35:17" isEndedSynced="True" />
     <Attempt id="2" started="06/19/2019 14:35:18" isStartedSynced="True" ended="06/19/2019 14:35:20" isEndedSynced="True" />
@@ -769,5 +769,16 @@
       <SegmentHistory />
     </Segment>
   </Segments>
-  <AutoSplitterSettings />
+  <AutoSplitterSettings>
+    <Version>1.5</Version>
+    <ScriptPath>D:\Speedrun\LiveSplit\Components\rvgl.asl</ScriptPath>
+    <Start>True</Start>
+    <Reset>True</Reset>
+    <Split>True</Split>
+    <CustomSettings>
+      <Setting id="AllCups" type="bool">False</Setting>
+      <Setting id="StuntArena" type="bool">False</Setting>
+      <Setting id="100%" type="bool">True</Setting>
+    </CustomSettings>
+  </AutoSplitterSettings>
 </Run>

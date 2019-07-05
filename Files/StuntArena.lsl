@@ -195,22 +195,7 @@
         <CenteredText>True</CenteredText>
         <FilterRegion>False</FilterRegion>
         <FilterPlatform>False</FilterPlatform>
-        <FilterVariables>False</FilterVariables>
-      </Settings>
-    </Component>
-    <Component>
-      <Path>LiveSplit.ScriptableAutoSplit.dll</Path>
-      <Settings>
-        <Version>1.5</Version>
-        <ScriptPath>D:\Speedrun\SPLITTER\rvgl.asl</ScriptPath>
-        <Start>True</Start>
-        <Reset>True</Reset>
-        <Split>True</Split>
-        <CustomSettings>
-          <Setting id="AllCups" type="bool">False</Setting>
-          <Setting id="StuntArena" type="bool">True</Setting>
-          <Setting id="100%" type="bool">False</Setting>
-        </CustomSettings>
+        <FilterVariables>True</FilterVariables>
       </Settings>
     </Component>
   </Components>
