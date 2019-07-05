@@ -5,6 +5,7 @@ state ("rvgl")
 	int stuntStars : 0x0258440, 0x10; //Counts the stars taken from stunt arena
 	int championshipLapCounter: 0x0256AA0, 0x18; //Indicated the max laps on championships
 	int lapCounter: 0x0258140, 0xF18; //Indicates the number of laps you completed. Starts from 0
+	byte folder: 0x0258460, 0x3C; //Indicates if the user is in main menu
 }
 startup
 {
@@ -14,7 +15,7 @@ startup
 }
 init
 {
-	vars.split=0;
+	vars.split=1;
 	//Setting up the check for All Cups and 100%:
 	vars.mapNames = new List<string> { "Nhood1", "SM2", "MS2", "BG", "Roof", "TW1", "GT1", "TW2", "Nhood2", "TT1", "MS1", "SM1", "GT2", "TT2" };
 	//Setting up the values for checking All Cups and 100%:
@@ -40,10 +41,10 @@ init
 }
 start
 {
-	if(current.Loading==0 && old.Loading==1) //Checks if any type of race loaded in
+	if(current.Loading==0 && old.Loading==1 && current.folder!=0) //Checks if any type of race loaded in
 	{
-		return true;
 		vars.split=1;
+		return true;
 	}
 }
 update
@@ -57,11 +58,11 @@ split
 	{
         foreach(string map in vars.mapNames)
         {    
-        if(vars.maps[map].Current>vars.maps[map].Old) //Checks if the progress table has changed
-        {
+        	if(vars.maps[map].Current>vars.maps[map].Old) //Checks if the progress table has changed
+        	{
 			vars.split+=1;
             return true;
-        }
+        	}
         }
 		if(current.lapCounter==current.championshipLapCounter && current.lapCounter!=old.lapCounter)
 		{
@@ -69,6 +70,7 @@ split
 			{
 				if(vars.split!=8 && vars.split!=15 && vars.split!=19 && vars.split!=27)
 				{
+					vars.split+=1;
 					return true;
 				}
 			}
@@ -76,16 +78,17 @@ split
 			{
 				if(vars.split!=4 && vars.split!=8 && vars.split!=12 && vars.split!=17)
 				{
+					vars.split+=1;
 					return true;
 				}
 			}
 		}
-		}
-	
+	}
 	if(settings["StuntArena"])
 	{
 		if(current.stuntStars==20)
 		{
+			print("stunt");
 			return true;
 		}
 	}
@@ -110,6 +113,7 @@ reset
         if(vars.maps[map].Current<vars.maps[map].Old) //Resets if the progress table gets reset
         {
             return true;
+			vars.split=1;
         }
         }
 	}
