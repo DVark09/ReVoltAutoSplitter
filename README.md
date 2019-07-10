@@ -21,7 +21,7 @@ Probably. Before we go on to use it we should agree on this though.
 ## When is it going to be out?
 I think it's done. 1.0 is here, Uploaded to LiveSplit and available through LiveSplit itself. Also downloadable here, but it would be just the same as the one on LiveSplit. Though I have sample layouts and splits for every category here.
 ## How do I use it?
-You first download the files, go to Livesplit and right click on the splits, go to edit splits. There You'll see this text below "Start timer at". To the right, there is an "Activate" button. You press that, and after that's done you go to settings. From there, you can select in advanced options which run you are doing. Select the desired option (All Cups for NG+ too) and you're good to go.
+You go to Livesplit and right click on the splits, go to edit splits. There You'll see a text below "Start timer at". To the right, there is an "Activate" button. You press that, and after that's done you go to the settings menu. From there, you can select in advanced options which run you are doing. Select the desired option (All Cups for NG+ too) and you're good to go.
 
 Splits:
 
@@ -35,9 +35,10 @@ Stunt Arena: Create just a single split. That's all.
 
 You also have to have 2 timers: one for real time, and one for game time.
 By the end it should look like this in the layout editor
+No need for scriptable auto splitter in the layout anymore!
 
 ![alt text](https://dani30868.s-ul.eu/YzQRQigq)
-#No need for scriptable auto splitter in the layout anymore!
+
 ## I have a question...
 Contact me on Discord: DVark09#7856
 
