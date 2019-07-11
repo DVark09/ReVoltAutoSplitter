@@ -66,6 +66,10 @@ split
 				}
 			}
 		}
+		if(current.stuntStars==20 && old.stuntStars==19)
+		{
+			return true;
+		}
 	}
 	if(settings["100%"] || settings["AllCups"])
 	{
