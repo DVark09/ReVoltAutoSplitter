@@ -119,7 +119,7 @@ reset
 	}
 	if(settings["StuntArena"])
 	{
-		if(current.RaceTime==0) //Simple check for quitting the race
+		if(current.loading==1) //Simple check for quitting the race
 		{
 			return true;
 		}
