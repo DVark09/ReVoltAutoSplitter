@@ -109,6 +109,16 @@ reset
 {
 	if(settings["100%"] || settings["AllCups"])
 	{
+		if(settings["AllCups"])
+		{
+			if(current.folder==0)
+			{
+				if(vars.split!=4 || vars.split!=8 || vars.split!=12)
+				{
+					return true;
+				}
+			}
+		}
         foreach(string map in vars.mapNames)
         {    
 			if(vars.maps[map].Current<vars.maps[map].Old) //Resets if the progress table gets reset
