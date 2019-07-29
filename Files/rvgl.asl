@@ -120,16 +120,6 @@ reset
 				}
 			}
 		}
-		/*if(settings["100%"])
-		{
-			if(current.folder==0)
-			{
-				if((vars.split>=5 && vars.split<=7) || (vars.split>=12 && vars.split<=14) || (vars.split>=16 && vars.split<=18) || (vars.split>=23 && vars.split<=26)
-				{
-					return true;
-				}
-			}
-		}*/
         foreach(string map in vars.mapNames)
         {    
 			if(vars.maps[map].Current<vars.maps[map].Old) //Resets if the progress table gets reset
