@@ -120,7 +120,7 @@ reset
 				}
 			}
 		}
-		if(settings["100%"])
+		/*if(settings["100%"])
 		{
 			if(current.folder==0)
 			{
@@ -129,7 +129,7 @@ reset
 					return true;
 				}
 			}
-		}
+		}*/
         foreach(string map in vars.mapNames)
         {    
 			if(vars.maps[map].Current<vars.maps[map].Old) //Resets if the progress table gets reset
