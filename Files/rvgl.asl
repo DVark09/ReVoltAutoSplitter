@@ -82,6 +82,7 @@ split
 			}
 			if(settings["AllCups"])
 			{
+				vars.split+=1;
 				return true;
 			}
 		}
@@ -114,6 +115,16 @@ reset
 			if(current.folder==0)
 			{
 				if(vars.split!=4 || vars.split!=8 || vars.split!=12)
+				{
+					return true;
+				}
+			}
+		}
+		if(settings["100%"])
+		{
+			if(current.folder==0)
+			{
+				if((vars.split>=5 && vars.split<=7) || (vars.split>=12 && vars.split<=14) || (vars.split>=16 && vars.split<=18) || (vars.split>=23 && vars.split<=26)
 				{
 					return true;
 				}
