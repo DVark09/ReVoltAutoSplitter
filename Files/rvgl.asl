@@ -15,7 +15,7 @@ startup
 }
 init
 {
-	vars.split=1; //Important for knowing where are you currently in the run to avoid double splitting at the end of cups on 100%.
+	vars.split=0; //Important for knowing where are you currently in the run to avoid double splitting at the end of cups on 100%.
 	//Setting up the check criteria for 100% (comparing each row in the progress table by reffering it with its name):
 	vars.mapNames = new List<string> { "Nhood1", "SM2", "MS2", "BG", "Roof", "TW1", "GT1", "TW2", "Nhood2", "TT1", "MS1", "SM1", "GT2", "TT2" };
 	//Setting up the values for checking 100%:
@@ -43,14 +43,13 @@ start
 {
 	if(current.Loading==0 && old.Loading==1 && current.folder!=0) //Checks if any type of race loaded in
 	{
-		vars.split=1;
+		vars.split=0;
 		return true;
 	}
 }
 update
 {
 	vars.maps.UpdateAll(game); //Updates the values of the progress table rows
-	print(vars.split.ToString());
 }
 split
 {
