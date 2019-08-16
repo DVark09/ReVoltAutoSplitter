@@ -50,6 +50,7 @@ start
 update
 {
 	vars.maps.UpdateAll(game); //Updates the values of the progress table rows
+	print(vars.split.toString());
 }
 split
 {
