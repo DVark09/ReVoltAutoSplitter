@@ -114,7 +114,7 @@ reset
 		{
 			if(current.folder==0)
 			{
-				if(vars.split!=3 || vars.split!=7 || vars.split!=11)
+				if(vars.split!=4 || vars.split!=8 || vars.split!=12)
 				{
 					return true;
 				}
