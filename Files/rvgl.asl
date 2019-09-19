@@ -48,7 +48,9 @@ split
 {
 	if(settings["100%"])
 	{
-		if(vars.split!=8 && vars.split!=15 && vars.split!=19 && vars.split!=27) //Checks if you're not at the and of any cup(avoids double splitting)
+		if(current.Nhood1>32 && old.Nhood1<32 || current.TW1>32 && old.TW1<32 || current.Nhood2>32 && old.Nhood2<32 || current.SM1>32 && old.SM1<32) //Checks if you're not at the and of any cup(avoids double splitting)
+		{}//does nothing
+		else
 		{
 			var c = current as IDictionary<String, Object>;
 			var o = old as IDictionary<String, Object>;
