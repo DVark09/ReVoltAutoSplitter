@@ -48,7 +48,7 @@ split
 {
 	if(settings["100%"])
 	{
-		if(current.Nhood1>32 && old.Nhood1<32 || current.TW1>32 && old.TW1<32 || current.Nhood2>32 && old.Nhood2<32 || current.SM1>32 && old.SM1<32) //Checks if you're not at the and of any cup(avoids double splitting)
+		if(current.Nhood1>=32 && old.Nhood1<32 || current.GT1>=32 && old.GT1<32 || current.Nhood2>=32 && old.Nhood2<32 || current.SM1>=32 && old.SM1<32) //Checks if you're not at the and of any cup(avoids double splitting)
 		{}//does nothing
 		else
 		{
@@ -73,16 +73,8 @@ split
 	{
 		if(current.lapCounter==current.championshipLapCounter && current.lapCounter!=old.lapCounter) //Race has been finished, the right condition is to prevent it from triggering multiple times
 		{
-			if(settings["100%"])
-			{	
 				vars.split+=1;
 				return true;
-			}
-			if(settings["AllCups"])
-			{
-				vars.split+=1;
-				return true;
-			}
 		}
 	}
 	if(settings["StuntArena"])
