@@ -71,10 +71,17 @@ split
 	}
 	if(settings["100%"] || settings["AllCups"])
 	{
+		if(current.SM1>40)
+		{
+			//does nothing
+		}
+		else
+		{
 		if(current.lapCounter==current.championshipLapCounter && current.lapCounter!=old.lapCounter) //Race has been finished, the right condition is to prevent it from triggering multiple times
 		{
 				vars.split+=1;
 				return true;
+		}
 		}
 	}
 	if(settings["StuntArena"])
