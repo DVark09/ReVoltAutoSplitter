@@ -1,11 +1,15 @@
 state ("rvgl")
 {
-	int RaceTime : 0xF9E89C; //Your current lap time
 	int Loading : 0xE930DC; //Bool, shows if the game is loading
 	int stuntStars : 0x80F750; //Counts the stars taken from stunt arena
 	int championshipLapCounter: 0xEB1978; //Indicated the max laps on championships
 	int lapCounter: 0xF9E898; //Indicates the number of laps you completed. Starts from 0
 	byte folder: 0x80C11C; //Indicates if the user is in main menu
+	//Folder examples: (BYTE!)
+	// Menu: 0
+	// NHood1: 110
+	// SM2: 109
+	// Botanical: 103
 	byte Nhood1: 0x232998; // These below are definitions for the progress table for each map.
 	byte SM2: 0x232A0C;
 	byte MS2: 0x232A80;
