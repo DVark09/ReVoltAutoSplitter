@@ -75,7 +75,7 @@ split
 	}
 	if(settings["100%"] || settings["AllCups"])
 	{
-		if(current.SM1>40)
+		if(current.SM1>39)
 		{
 			//does nothing
 		}
