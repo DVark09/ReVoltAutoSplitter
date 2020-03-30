@@ -1,29 +1,29 @@
 state ("rvgl")
 {
-	int Loading : 0x10E865C; //Bool, shows if the game is loading
-	int stuntStars : 0xA558D0; //Counts the stars taken from stunt arena
-	int championshipLapCounter: 0x1106EF8; //Indicated the max laps on championships
-	int lapCounter: 0x62D4CB8; //Indicates the number of laps you completed. Starts from 0
-	byte folder: 0xA5227C; //Indicates if the user is in main menu
+	int Loading : 0x11B9B3C; //Bool, shows if the game is loading
+	int stuntStars : 0xB22C30; //Counts the stars taken from stunt arena
+	int championshipLapCounter: 0x11D83D8; //Indicated the max laps on championships
+	int lapCounter: 0x63A6198; //Indicates the number of laps you completed. Starts from 0
+	byte folder: 0xB1F57C; //Indicates if the user is in main menu
 	//Folder examples: (BYTE!)
 	// Menu: 0
 	// NHood1: 110
 	// SM2: 109
 	// Botanical: 103
-	byte Nhood1: 0x2379D8; // These below are definitions for the progress table for each map.
-	byte SM2: 0x237A4C;
-	byte MS2: 0x237AC0;
-	byte BG: 0x237B34;
-	byte Roof: 0x237BA8;
-	byte TW1: 0x237C1C;
-	byte GT1: 0x237C90;
-	byte TW2: 0x237D04;
-	byte Nhood2: 0x237D78;
-	byte TT1: 0x237DEC;
-	byte MS1: 0x237E60;
-	byte SM1: 0x237ED4;
-	byte GT2: 0x237F48;
-	byte TT2: 0x237FBC;
+	byte Nhood1: 0x243B38; // These below are definitions for the progress table for each map.
+	byte SM2: 0x243BAC;
+	byte MS2: 0x243C20;
+	byte BG: 0x243C94;
+	byte Roof: 0x243D08;
+	byte TW1: 0x243D7C;
+	byte GT1: 0x243DF0;
+	byte TW2: 0x243E64;
+	byte Nhood2: 0x243ED8;
+	byte TT1: 0x243F4C;
+	byte MS1: 0x243FC0;
+	byte SM1: 0x244034;
+	byte GT2: 0x2440A8;
+	byte TT2: 0x24411C;
 }
 startup
 {
