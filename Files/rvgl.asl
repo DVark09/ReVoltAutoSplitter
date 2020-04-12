@@ -30,6 +30,7 @@ startup
 	settings.Add("AllCups", true, "All Cups");
 	settings.Add("StuntArena", false, "Stunt Arena");
 	settings.Add("100%", false, "100%");
+	settings.Add("NG+", false, "NG+", "AllCups");
 }
 init
 {
@@ -75,17 +76,28 @@ split
 	}
 	if(settings["100%"] || settings["AllCups"])
 	{
-		if(current.SM1>39)
+		if(settings["NG+"])
 		{
-			//does nothing
+			if(current.lapCounter==current.championshipLapCounter && current.lapCounter!=old.lapCounter) //Race has been finished, the right condition is to prevent it from triggering multiple times
+			{
+				vars.split+=1;
+				return true;
+			}
 		}
 		else
 		{
-		if(current.lapCounter==current.championshipLapCounter && current.lapCounter!=old.lapCounter) //Race has been finished, the right condition is to prevent it from triggering multiple times
-		{
-				vars.split+=1;
-				return true;
-		}
+			if(current.SM1>39)
+			{
+				//does nothing
+			}
+			else
+			{
+			if(current.lapCounter==current.championshipLapCounter && current.lapCounter!=old.lapCounter) //Race has been finished, the right condition is to prevent it from triggering multiple times
+			{
+					vars.split+=1;
+					return true;
+			}
+			}
 		}
 	}
 	if(settings["StuntArena"])
@@ -113,11 +125,18 @@ reset
 	{
 		if(settings["AllCups"])
 		{
-			if(current.folder==0)
+			if(settings["NG+"])
 			{
-				if(vars.split!=4 && vars.split!=8 && vars.split!=12)
+				//no auto reset for NG+ due to any cup order
+			}
+			else
+			{
+				if(current.folder==0)
 				{
-					return true;
+					if(vars.split!=4 && vars.split!=8 && vars.split!=12)
+					{
+						return true;
+					}
 				}
 			}
 		}
