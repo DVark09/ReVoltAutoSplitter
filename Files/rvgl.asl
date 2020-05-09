@@ -1,29 +1,31 @@
+// Autosplitter for RVGL version 20.0430a
+// Made by DVark09
 state ("rvgl")
 {
-	int Loading : 0x11B9B3C; //Bool, shows if the game is loading
-	int stuntStars : 0xB22C30; //Counts the stars taken from stunt arena
-	int championshipLapCounter: 0x11D83D8; //Indicated the max laps on championships
-	int lapCounter: 0x63A6198; //Indicates the number of laps you completed. Starts from 0
-	byte folder: 0xB1F57C; //Indicates if the user is in main menu
+	int Loading : 0x11BAB5C; //Bool, shows if the game is loading
+	int stuntStars : 0xB23BF0; //Counts the stars taken from stunt arena
+	int championshipLapCounter: 0x11D93F8; //Indicated the max laps on championships
+	int lapCounter: 0x63A71B8; //Indicates the number of laps you completed. Starts from 0
+	byte folder: 0xB2057C; //Indicates if the user is in main menu
 	//Folder examples: (BYTE!)
 	// Menu: 0
 	// NHood1: 110
 	// SM2: 109
 	// Botanical: 103
-	byte Nhood1: 0x243B38; // These below are definitions for the progress table for each map.
-	byte SM2: 0x243BAC;
-	byte MS2: 0x243C20;
-	byte BG: 0x243C94;
-	byte Roof: 0x243D08;
-	byte TW1: 0x243D7C;
-	byte GT1: 0x243DF0;
-	byte TW2: 0x243E64;
-	byte Nhood2: 0x243ED8;
-	byte TT1: 0x243F4C;
-	byte MS1: 0x243FC0;
-	byte SM1: 0x244034;
-	byte GT2: 0x2440A8;
-	byte TT2: 0x24411C;
+	byte Nhood1: 0x244B38; // These below are definitions for the progress table for each map. Max value is 63, min value is 0. Addresses are in this order exaclty.
+	byte SM2: 0x244BB0;
+	byte MS2: 0x244C28;
+	byte BG: 0x244CA0;
+	byte Roof: 0x244D18;
+	byte TW1: 0x244D90;
+	byte GT1: 0x244E08;
+	byte TW2: 0x244E80;
+	byte Nhood2: 0x244EF8;
+	byte TT1: 0x244F70;
+	byte MS1: 0x244FE8;
+	byte SM1: 0x245060;
+	byte GT2: 0x2450D8;
+	byte TT2: 0x245150;
 }
 startup
 {
