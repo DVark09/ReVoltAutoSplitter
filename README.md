@@ -41,7 +41,38 @@ If you seem to have an issue that isn't realated to these, download DebugView fr
 
 ## How to update the splitter (For people who want to contribute)
 
-Soon!... Going to figure out if I can identify similarities in IDA between different versions. If that works, I will update this section with proper information
+You can help update this project pretty easily, if you know how to use CE.
+You'll need:
+    Cheat Engine (version not that important)
+    The build you want to create the update for
+If you don't know how to use CE this tutorial should help: https://www.youtube.com/watch?v=Mj1bnmWAadc
+
+If you know how to use CE here's how to find all the addresses:
+Loading: Any track loading (when loading value is 1, otherwise 0 [4Byte])
+StuntStars: get 2-3 stars on the map or just switch betveen profiles and search for star ammount [4 byte]
+ChampionshipLapCounter: Start bronze (value 3) and silver cup (value 6), repeat until found address [4Byte]
+LapCounter: Do one-two laps on a map and check for these values [4Byte]:
+	Lap 1: 0
+	Lap 2: 1
+	...
+Folder examples [BYTE]!: 
+	Menu 0
+	Nhood1 110
+	SM2 109
+	Botanical 103
+Progress table: Switch between a fully done progress table (Rooftops INCLUDED!) and a clear profile. Search for [BYTE!] 63 in first and 0 in the second case. 14 addresses with green indicators should be on the top of the list. Those will be the maps in the order as you can see them on the progress table.
+
+After you've found every address you'll need to put them into rvgl.asl.
+When you have the addresses in your list at the bottom section, double click on the address for one of them. That should show up a window where you'll see the address which you'll need to put into the other file.
+The required part is after rvgl.exe+, so in the picture the required info is B23BF0.
+
+![alt exact address example](https://dani30868.s-ul.eu/cLRhP8ia)
+
+In rvgl.asl, you need to put this into the respective line where that variable is declared. BUT you don't need to remove the 0x part in it, just replace the part after that and before the semicolon to the found address (going on from the example now it should be 0xB23BF0; [don't remove semicolon!])
+
+Repeat this process for every address until you have changed every variable's pointer.
+
+After this, you can issue a pull request with your updated version.
 
 ## I have a question...
 Contact me on Discord: DVark09#7856
