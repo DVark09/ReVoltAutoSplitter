@@ -4,6 +4,7 @@ state ("rvgl")
 {
 	int Loading : 0x11BAB5C; //Bool, shows if the game is loading
 	int stuntStars : 0xB23BF0; //Counts the stars taken from stunt arena
+	int stuntMax: 0x639BDD4; //Stores the maximum star count in the currently open arena. Useful for custom arenas but works fine with the stock arena aswell.
 	int championshipLapCounter: 0x11D93F8; //Indicated the max laps on championships and on regualar races aswell
 	int lapCounter: 0x63A71B8; //Indicates the number of laps you completed. Starts from 0
 	byte folder: 0xB2057C; //Indicates if the user is in main menu
@@ -104,7 +105,7 @@ split
 	}
 	if(settings["StuntArena"])
 	{
-		if(current.stuntStars==20)
+		if(current.stuntStars==current.stuntMax)
 		{
 			return true;
 		}
