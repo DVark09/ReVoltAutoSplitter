@@ -105,7 +105,7 @@ split
 	}
 	if(settings["StuntArena"])
 	{
-		if(current.stuntStars==current.stuntMax)
+		if(current.stuntStars==current.stuntMax && current.stuntStars!=0)
 		{
 			return true;
 		}
