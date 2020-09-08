@@ -2,7 +2,7 @@
 // Made by DVark09
 state ("rvgl")
 {
-	int Loading : 0x11CBD3C; //Bool, shows if the game is loading
+	int Loading : 0x11CBC21; //Bool, shows if the game is loading
 	int stuntStars : 0xB33CB0; //Counts the stars taken from stunt arena
 	int stuntMax: 0x63AD1B4; //Stores the maximum star count in the currently open arena. Useful for custom arenas but works fine with the stock arena aswell.
 	int championshipLapCounter: 0x11EA7D8; //Indicated the max laps on championships and on regualar races aswell
