@@ -2,31 +2,31 @@
 // Made by DVark09
 state ("rvgl")
 {
-	byte Loading : 0x11D4421; //Bool, shows if the game is loading
-	int stuntStars : 0xB33CB0; //Counts the stars taken from stunt arena
-	int stuntMax: 0x63B59B4; //Stores the maximum star count in the currently open arena. Useful for custom arenas but works fine with the stock arena aswell.
-	int championshipLapCounter: 0x11F2FD8; //Indicated the max laps on championships and on regualar races aswell
-	int lapCounter: 0x63C0A98; //Indicates the number of laps you completed. Starts from 0
-	byte folder: 0xB305DC; //Indicates if the user is in main menu
+	byte Loading : 0x12D6FCD; //Bool, shows if the game is loading
+	int stuntStars : 0xB40450; //Counts the stars taken from stunt arena DONE
+	int stuntMax: 0xA8E2724; //Stores the maximum star count in the currently open arena. Useful for custom arenas but works fine with the stock arena aswell. DONE
+	int championshipLapCounter: 0x2E1538; //Indicated the max laps on championships and on regualar races aswell DONE
+	int lapCounter: 0xA8ED8A0; //Indicates the number of laps you completed. Starts from 0 DONE
+	byte folder: 0xB3CA9C; //Indicates if the user is in main menu DONE
 	//Folder examples: (BYTE!)
 	// Menu: 0
 	// NHood1: 110
 	// SM2: 109
 	// Botanical: 103
-	byte Nhood1: 0x251CD8; // These below are definitions for the progress table for each map. Max value is 63, min value is 0. Addresses are in this order exaclty.
-	byte SM2: 0x251D50;
-	byte MS2: 0x251DC8;
-	byte BG: 0x251E40;
-	byte Roof: 0x251EB8;
-	byte TW1: 0x251F30;
-	byte GT1: 0x251FA8;
-	byte TW2: 0x252020;
-	byte Nhood2: 0x252098;
-	byte TT1: 0x252110;
-	byte MS1: 0x252188;
-	byte SM1: 0x252200;
-	byte GT2: 0x252278;
-	byte TT2: 0x2522F0;
+	byte Nhood1: 0x25BDD8; // These below are definitions for the progress table for each map. Max value is 63, min value is 0. Addresses are in this order exaclty. DONE
+	byte SM2: 0x25BE50;
+	byte MS2: 0x25BEC8;
+	byte BG: 0x25BF40;
+	byte Roof: 0x25BFB8;
+	byte TW1: 0x25C030;
+	byte GT1: 0x25C0A8;
+	byte TW2: 0x25C120;
+	byte Nhood2: 0x25C198;
+	byte TT1: 0x25C210;
+	byte MS1: 0x25C288;
+	byte SM1: 0x25C300;
+	byte GT2: 0x25C378;
+	byte TT2: 0x25C3F0;
 }
 startup
 {
